@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-width: 600px;
+    font-family: sans-serif;
+    background:url(img/fundo3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;/*pour que l'image soit fixée*/
+    background-position: center;
+}
+
+
+.menu{
+    background: red;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+
+}
+span{
+    color: blue;
+}
+.logo{
+    background: blue;
+    text-shadow: 2px 2px 5px black;
+    height: 80px;
+    width: 350px;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 20px;
+    color: rgb(250, 16, 16);
+
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li{
+    padding: 10px 20px;
+    position: relative;
+    }
+ .menu ul li a{
+     color: white;
+     text-shadow: 2px 1px 1px black;
+     text-decoration: none;
+     font-size: 20px;
+     transition: all 0.3s;
+    }
+    .menu ul li a:hover{
+        color:rgb(9, 21, 124);
+    }
+    .roman{
+        display: none;
+    }
+    .menu ul li:hover .roman{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100%;
+    }
+
+    .menu ul li:hover .roman ul{
+     display: block;
+     margin: 10px;
+    }
+
+    .menu ul li:hover .roman ul li{
+    width: 100px;
+    padding: 15px;
+    } 
+
+    /*slider*/
+    .slider {
+        height: 200px;
+        margin: 100px;
+        position: relative;
+        width: 90%;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+    }
+    .slide-track {
+        display: flex;
+        width: calc(200px * 14);
+        animation: scroll 40s linear infinite;
+    } 
+    /* pour pause le scroll*/
+    .slide-track:hover {
+        animation-play-state: paused;
+    } 
+    /*auto scroll*/
+
+    @keyframes scroll {
+        0%{
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc( -250px * 7));
+        }
+    }
+    .slide{
+        height: 200px;
+        width: 250px;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        perspective: 100px;
+    }  
+
+    .slide img{
+        position: relative;
+		padding-top:45.03%;
+        width: 100%;
+        height: 100%;
+    }
+    /*image effect*/
+    img:hover{
+        transform: translateZ(25px);
+    }
+/*gradient shadows*/
+
+.slider::before,
+.slider::after {
+    /*background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);*/
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+.slider::before{
+    left: 0;
+    top: 0;
+}
+.slider::after{
+    left: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+.text{
+    margin-top: 50px;
+}
+section h1{
+    text-align: center;
+    font-size: 60px;
+    color: rgb(230, 14, 14);
+}
+section p{
+    color: white;
+    text-align:justify ;
+    margin: 20px;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+@media screen and (min-width:1180px) {
+    section p{
+        text-align: justify;
+        position: relative;
+    }
+}
+ .servicos{
+     width: auto;
+     height: 590px; 
+     /*border: solid 5px tomato; */ 
+ }
+ .serv{
+     display: flex;
+     padding: 5px;
+     justify-content: space-around;
+ }
+ .contacto ul{
+     display: flexbox;
+     /*text-align: center;*/
+     margin-left: 100px;
+     padding: 55px;
+     list-style: none;
+     position: relative;
+     font-size: 30px;
+     justify-content: space-between;
+     color:white;
+     width: auto;
+     height: 190px; 
+     /*border: solid 5px tomato;*/ 
+}
+
+
+
+
+
+/*footer*/
+footer{
+    margin: auto;
+    height: 80px;
+    width: 100%;
+    padding-top: 40px;
+    /*position: fixed;*/
+    
+}    
+.reseaux_sociaux a img{
+    width: 124px;
+    padding: 10px;
+    align-items: center;
+}
+.reseaux_sociaux ul {
+    list-style: none;
+    display: flex;
+    padding: 0 10px;
+    justify-content: center;
+}
+.prodution p, h3{
+    text-align: center;
+    color: white;
+}
