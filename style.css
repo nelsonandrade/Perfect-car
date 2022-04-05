@@ -18,7 +18,7 @@ body{
 .menu{
     background: red;
     height: 80px;
-    width: 100%;
+    width: 1200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -83,15 +83,15 @@ span{
         height: 200px;
         margin: 100px;
         position: relative;
-        width: 90%;
+        width: 75%;
         display: grid;
         place-items: center;
         overflow: hidden;
     }
     .slide-track {
         display: flex;
-        width: calc(200px * 14);
-        animation: scroll 40s linear infinite;
+        width: calc(200px * 10);
+        animation: scroll 35s linear infinite;
     } 
     /* pour pause le scroll*/
     .slide-track:hover {
