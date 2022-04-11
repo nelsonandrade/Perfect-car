@@ -18,7 +18,7 @@ body{
 .menu{
     background: red;
     height: 80px;
-    width: 1200px;
+   /* width: 1200px;*/
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -83,7 +83,7 @@ span{
         height: 200px;
         margin: 100px;
         position: relative;
-        width: 75%;
+        width: 90%;
         display: grid;
         place-items: center;
         overflow: hidden;
