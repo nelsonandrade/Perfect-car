@@ -79,7 +79,7 @@ span{
 
     /*Menu responsivo*/
 
-    @media screen and {max-width: 600px} {
+    @media  {max-width: 600px} {
         .menu{
             width: 100%;
             max-height:0px;
@@ -178,7 +178,7 @@ section p{
     
 }
 
-@media screen and (min-width:1180px) {
+@media(min-width:1180px) {
     section p{
         text-align: justify;
         position: relative;
@@ -469,7 +469,7 @@ section p{
 }
 .map{
     min-height: 300px;
-   padding: 30px;
+   padding: 0px;
 }
 .formBox .row50{
     display: flex;
@@ -480,10 +480,44 @@ section p{
     width: 100%;
 }
 .contact{
-    padding: 30px;
+    padding: 10px;
 }
 }
+@media(min-width: 486px){
+    .contactez{
+        padding: 10px;
+    }
 
+.box{
+    min-width:480px ;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "form"
+    "info"
+    "map";
+}
+.map{
+    min-height: 250px;
+   padding: 0px;
+}
+.formBox .row50{
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+}
+.inputbox {
+    width: 100%;
+}
+.contact{
+    padding: 5px;
+}
+.inputbox textarea{
+    resize: none;
+    min-height: 90%px;
+    margin-bottom: 10px;
+}
+}
 
 
 
