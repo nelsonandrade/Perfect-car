@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    width: 100%;
+   /* width: 100%;*/
     min-width: 600px;
     font-family: sans-serif;
     background:url(img/fundo3.jpg);
@@ -17,45 +17,51 @@ body{
     background-position: center;
 }
 .menu{
-    background: red;
-    height: 80px;
+    width: auto;
+    background:transparent;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 5%;
+    margin-top: 60px;
+    box-sizing: border-box;
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+.menu img{
+    border-radius: 50%;
+    width: 150px;
+   
+
 }
 span{
     color: blue;
 }
-.logo{
-    background: blue;
-    text-shadow: 2px 2px 5px black;
-    height: 80px;
-    width: 350px;
-    text-align: center;
-    padding-top: 40px;
-    font-size: 20px;
-    color: rgb(250, 16, 16);
 
-}
-.menu ul{
+.menu ul {
     list-style: none;
     display: flex;
 }
 
-.menu ul li{
+.menu ul li {
     padding: 10px 20px;
     position: relative;
+    transition: .5s;
+ 
     }
  .menu ul li a{
-     color: white;
-     text-shadow: 2px 1px 1px black;
+     color: black;
      text-decoration: none;
+     font-weight: bold;
      font-size: 20px;
-     transition: all 0.3s;
+     transition: 0.5s;
     }
     .menu ul li a:hover{
-        color:rgb(9, 21, 124);
+        color:white;
+        background: #000;
+        width: auto;
+        
     }
     .roman{
         display: none;
@@ -76,23 +82,17 @@ span{
     width: 100px;
     padding: 15px;
     } 
-
-    /*Menu responsivo*/
-
-   /* @media {max-width: 600px} {
-        .menu{
-            width: 100%;
-            max-height: 0px;
-            overflow: hidden;
-        }
-        .list{
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
-        
-    }*/
-
+    .mobile-menu div {
+        width: 32px;
+        height: 5px;
+        background:blue;
+        margin: 8px;
+        border-radius: 20px;
+    }
+    .text h1{
+        width: 650px;
+        margin: 40px;
+    }
     /*slider*/
     .slider {
         height: 200px;
@@ -463,6 +463,41 @@ section p{
 /*Responsive Design*/
 @media (max-width: 991px){
     /*page peinture et carroserie*/
+       /*menu*/
+body{
+    overflow-x: hidden;
+}
+.menu{
+    position: absolute;
+    top: 8vh;
+    right:0;
+    margin-top: 10px;
+    width: 50vw;
+    height: 92vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translate(100%);
+}
+.menu li{
+    margin-left: 0;
+    opacity: 0;
+} 
+.mobile-menu {
+    display: block;
+    float: right; 
+    margin-right: 15px;      
+}
+.
+.menu img{
+    display: none;
+}
+.list.active {
+    transform: translateX(0);
+}
+.slider{
+    display: none;
+}
 #peinture p{
     width: 475px;
     height: 250px;
@@ -583,7 +618,6 @@ section p{
     padding-left: 0px;
 }
 
-
 }
 @media(max-width: 800px){
 #temoi img{
@@ -612,6 +646,7 @@ section p{
     gap: 10px;
     padding: 10px; 
 }
+
 @media(max-width: 600px){
     #peinture p{
         width: 475px;
@@ -690,6 +725,11 @@ section p{
     }
     .reseaux_sociaux a img{
         display: none;
+    }
+    .travaux{
+        display: block;
+        width: 300px;
+        padding-left: 80px;
     }
 }  
 
