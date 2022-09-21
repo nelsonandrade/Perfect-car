@@ -178,7 +178,7 @@ section p{
     
 }
 
-@media(max-width:1180px) {
+@media(max-width:1200px) {
     section p{
         text-align: justify;
         position: relative;
@@ -562,6 +562,28 @@ section p{
 .contact{
     padding: 30px;
 }
+/*page reparation*/
+.travaux{
+    width: 760px;
+    height: auto;
+    display: flex;
+    margin: 10px 50px;
+}
+.travaux img{
+    width: 250px;
+    height: 200px;
+    padding: 10px 10px;
+    border-radius: 25px;
+}
+
+.travaux  h3{
+    color: #5690bd;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px black;
+    padding-left: 0px;
+}
+
+
 }
 @media(max-width: 800px){
 #temoi img{
