@@ -183,12 +183,7 @@ section p{
     
 }
 
-@media(max-width:1200px) {
-    section p{
-        text-align: justify;
-        position: relative;
-    }
-}
+
  .servicos{
      width: auto;
      height: 590px; 
