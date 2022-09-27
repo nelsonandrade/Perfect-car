@@ -638,10 +638,136 @@ body{
     text-shadow: 2px 2px 5px black;
     padding-left: 0px;
 }
-
 }
 
+@media (max-width:750px){
+    body{
+        overflow-x: hidden;
+    }
+    #text p{
+        font-size: 20px;
+    }
+    #peinture p{
+        width: 475px;
+        height: 250px;
+        font-size: 23px;
+        color: white;
+        text-shadow: 2px 2px 5px rgb(17, 17, 17);
+        margin-left: 60px;
+        padding: 5px 5px;       
+    }
+    #peinture h1{
+        color: blue;
+        font-size: 30px;
+        margin-left: 25px;
+        padding-top: 50px;
+    }
+    .servicos{
+        display: none;
+    }
+    #voitures{
+        width: 475px;
+        margin: 5px 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    #voitures img{
+        width: 450px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 4px black;   
+    }
+    .contacto{
+        text-align: center;
+     }
+     .contacto ul{
+         display: flexbox;
+         margin-left: 100px;
+         padding: 55px;
+         list-style: none;
+         position: relative;
+         font-size: 20px;
+         justify-content: space-between;
+         color:white;
+         width: auto;
+         height: 190px;  
+    }
+    .contacto ul i{
+        color: rgb(60, 74, 225);
+        box-shadow: 2px 2px 5px black;
+    }
+    #clients h1{
+        color: blue;
+        font-size: 30px;
+        margin-top: 30px;
+        text-shadow: 2px 2px 4px black;
+    }
+    
+    #temoi{
+        width: 500px;
+        height: auto;
+        border: 3px solid rgba(250, 250, 252, 0.973);
+        margin: 5px 35px;
+        display: flex;
+    }    
+    #temoi img{
+      display: none;
+    }
+   
+    .contactez{
+        padding: 0px;
+    }
+    .box{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "form"
+    "info"
+    "map";
+    }
+    .map{
+        min-height: 200px;
+       padding: 0px;
+    }
+    .formBox .row50{
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+    .inputbox {
+        width: 100%;
+    }
+    .contact{
+        padding: 0px;
+    }
+    .inputbox textarea{
+        resize: none;
+        min-height: 100%px;
+        margin-bottom: 5px;
+    }
+    .prodution p, h3{
+        text-align: center;
+        color: white;
+        font-size: 15px;
+    }
+    }
+    .reseaux_sociaux a img{
+        display: none;
+    }
+    .travaux{
+        display: flex;
+        width: 300px;
+        padding-left: 80px;
+    }
+
+
 @media (max-width:600px){
+    body{
+        overflow-x: hidden;
+    }
     #text p{
         font-size: 20px;
     }
@@ -761,128 +887,6 @@ body{
         padding-left: 0px;
         margin: 0px 0px;
     }
-
-
-    @media (max-width:750px){
-        #text p{
-            font-size: 20px;
-        }
-        #peinture p{
-            width: 475px;
-            height: 250px;
-            font-size: 23px;
-            color: white;
-            text-shadow: 2px 2px 5px rgb(17, 17, 17);
-            margin-left: 60px;
-            padding: 5px 5px;       
-        }
-        #peinture h1{
-            color: blue;
-            font-size: 30px;
-            margin-left: 25px;
-            padding-top: 50px;
-        }
-        .servicos{
-            display: none;
-        }
-        #voitures{
-            width: 475px;
-            margin: 5px 50px;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            gap: 10px;
-            padding: 10px;
-        }
-        
-        #voitures img{
-            width: 450px;
-            border-radius: 15px;
-            box-shadow: 2px 2px 4px black;   
-        }
-        .contacto{
-            text-align: center;
-         }
-         .contacto ul{
-             display: flexbox;
-             margin-left: 100px;
-             padding: 55px;
-             list-style: none;
-             position: relative;
-             font-size: 20px;
-             justify-content: space-between;
-             color:white;
-             width: auto;
-             height: 190px;  
-        }
-        .contacto ul i{
-            color: rgb(60, 74, 225);
-            box-shadow: 2px 2px 5px black;
-        }
-        #clients h1{
-            color: blue;
-            font-size: 30px;
-            margin-top: 30px;
-            text-shadow: 2px 2px 4px black;
-        }
-        
-        #temoi{
-            width: 500px;
-            height: auto;
-            border: 3px solid rgba(250, 250, 252, 0.973);
-            margin: 5px 35px;
-            display: flex;
-        }    
-        #temoi img{
-          display: none;
-        }
-       
-        .contactez{
-            padding: 0px;
-        }
-        .box{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "form"
-        "info"
-        "map";
-        }
-        .map{
-            min-height: 200px;
-           padding: 0px;
-        }
-        .formBox .row50{
-            display: flex;
-            gap: 0;
-            flex-direction: column;
-        }
-        .inputbox {
-            width: 100%;
-        }
-        .contact{
-            padding: 0px;
-        }
-        .inputbox textarea{
-            resize: none;
-            min-height: 100%px;
-            margin-bottom: 5px;
-        }
-        .prodution p, h3{
-            text-align: center;
-            color: white;
-            font-size: 15px;
-        }
-        }
-        .reseaux_sociaux a img{
-            display: none;
-        }
-        .travaux{
-            display: flex;
-            width: 300px;
-            padding-left: 80px;
-        }
-    
 /*footer*/
 footer{
     margin: auto;
