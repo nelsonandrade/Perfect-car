@@ -43,7 +43,7 @@ span{
 }
 
 .nav-list li {
-   letter-spacing: 2px;
+   letter-spacing: 1px;
    margin-left: 25px;
 }
  .nav-list li a{
@@ -51,7 +51,7 @@ span{
      text-decoration: none;
      font-weight: bold;
      font-size: 20px;
-     transition: 0.5s;
+     transition: 0.3s;
     }
     .nav-list ul li a:hover{
         color:white;
@@ -788,7 +788,6 @@ body{
         width: 500px;
         height: auto;
         margin: 20px 100px;
-        border: 2px solid tomato;
         display: grid;
         grid-template-columns: auto auto;
     }
@@ -816,7 +815,17 @@ body{
         font-size: 20px;
     }
     #mobile-menu > div{
-        padding-right:150px ;
+        padding-right: 150px ;
+    }
+    #text{
+        align-items: center;
+        padding-left: 20px;
+    
+    }
+    .text h1, span{
+        width: 300px;
+        padding-left: auto;
+        font-size: 40px ;
     }
     #peinture p{
         width: 475px;
