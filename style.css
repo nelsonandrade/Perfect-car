@@ -227,7 +227,7 @@ span{
 }
 #voitures{
     width: 750px;
-    margin: 30px 300px;
+    margin: 30px 570px;
     display: flexbox;
     grid-template-columns: auto auto ;
     gap: 10px;
@@ -459,6 +459,12 @@ span{
     color: #101cff;
     text-shadow: 1px 1px 1px rgb(239, 236, 236);
     font-size: 30px;
+}
+
+@media (max-width:1350px) {
+    #voitures{
+        margin: 20px 200px;
+    }
 }
 @media (max-width:1200px) {
     .text p{
