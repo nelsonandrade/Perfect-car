@@ -648,10 +648,16 @@ body{
     padding: 30px;
 }
 /*page reparation*/
+}
+.text p{
+    margin-left: 100px;
+    font-size: 22px;
+}
+
 #travaux{
     width: 900px;
     height: auto;
-    margin: 20px 40px;
+    margin: 20px 10px;
     display: grid;
     grid-template-columns: auto auto;
 }
@@ -668,8 +674,9 @@ body{
     color: #101cff;
     text-shadow: 1px 1px 1px rgb(239, 236, 236);
     font-size: 30px;
+    text-align: center;
 }
-}
+
 
 @media (max-width: 750px) {
     body{
@@ -790,7 +797,9 @@ body{
     }
     /*page reparations*/
     .text p{
-        font-size:20px;
+        width: 600px;
+        font-size:18px;
+        margin-left: 30px;
     }
     #travaux{
         width: 500px;
@@ -815,7 +824,7 @@ body{
     }
 }
 
-@media (max-width:600px){
+@media (max-width:650px){
     body{
         overflow-x: hidden;
     }
@@ -954,6 +963,10 @@ body{
         margin: 20px 100px;
         display: grid;
         grid-template-columns: auto auto;
+    }
+    .text p{
+        width: 550px;
+        font-size: 18px;
     }
     #travaux img{
         width: 250px;
@@ -1123,10 +1136,16 @@ body{
     .contacto {
         display: none;
     }
+    .text p{
+        width: 350px;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 10px;
+    }
     #travaux{
         width: 300px;
         height: auto;
-        margin: 20px 100px;
+        margin: 20px 50px;
         display: grid;
         grid-template-columns: auto auto;
     }
