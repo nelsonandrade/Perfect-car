@@ -92,6 +92,7 @@ span{
         width: 650px;
         margin: 40px;
     }
+   
     /*slider*/
     .slider {
         height: 200px;
@@ -171,9 +172,10 @@ span{
     color: rgb(230, 14, 14);
 }
 .text p{
+    width: 900px;
     color: white;
     text-align:justify ;
-    margin: 20px;
+    margin-left: 500px;
     font-size: 25px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
 }
@@ -459,6 +461,10 @@ span{
     font-size: 30px;
 }
 @media (max-width:1200px) {
+    .text p{
+        margin-left: 250px;
+        width: 700px;
+    }
     #travaux{
         width: 900px;
         height: auto;
