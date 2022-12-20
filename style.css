@@ -92,7 +92,20 @@ span{
         width: 650px;
         margin: 40px;
     }
-   
+    /*mensagem*/
+    #boas_festas h2{
+        text-align: center;
+        margin-top: 50px;
+        font-size: 30px;
+        color: aliceblue;
+        text-shadow: 2px 5px black;
+        font-family: Arial, Helvetica, sans-serif;    
+    }
+    #boas_festas span{
+        color: rgba(255, 0, 0, 0.962);
+        font-size: 50px;
+        text-shadow: 2px 5px black;
+    }
     /*slider*/
     .slider {
         height: 200px;
