@@ -93,9 +93,20 @@ span{
         margin: 40px;
     }
     /*mensagem*/
+    #boas_festas{
+        background-color: #18b7ff;
+        width: 700px;
+        margin-left: 750px;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 25px;
+        box-shadow: 5px 7px rgb(45, 18, 197);
+    }
     #boas_festas h2{
         text-align: center;
         margin-top: 50px;
+        padding: 10px;
         font-size: 30px;
         color: aliceblue;
         text-shadow: 2px 5px black;
@@ -184,11 +195,11 @@ span{
     font-size: 60px;
     color: rgb(230, 14, 14);
 }
-.text p{
+#text p{
     width: 900px;
     color: white;
     text-align:justify ;
-    margin-left: 500px;
+    margin-left: 700px;
     font-size: 25px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
 }
@@ -487,6 +498,32 @@ span{
     .text p{
         margin-left: 250px;
         width: 700px;
+    }
+    
+    #boas_festas{
+        background-color: #18b7ff;
+        width: 450px;
+        margin-left: 300px;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 25px;
+        box-shadow: 5px 7px rgb(45, 18, 197);
+    }
+    #boas_festas h2{
+        text-align: center;
+        margin-top: 50px;
+        padding: 10px;
+        font-size: 30px;
+        color: aliceblue;
+        text-shadow: 2px 2px black;
+        font-family: Arial, Helvetica, sans-serif;    
+    }
+    #boas_festas span{
+        color: rgba(255, 0, 0, 0.962);
+        font-size: 30px;
+        text-shadow: 2px 2px black;
+        padding-left: 2px;
     }
     #travaux{
         width: 900px;
@@ -1031,6 +1068,32 @@ body{
         width: 100px;
         margin-bottom: 50px;
     }
+
+    #boas_festas{
+        background-color: #18b7ff;
+        width:300px;
+        margin-left: 60px;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 25px;
+        box-shadow: 5px 7px rgb(45, 18, 197);
+    }
+    #boas_festas h2{
+        text-align: center;
+        margin-top: 50px;
+        padding: 10px;
+        font-size: 20px;
+        color: aliceblue;
+        text-shadow: 2px 2px black;
+        font-family: Arial, Helvetica, sans-serif;    
+    }
+    #boas_festas span{
+        color: rgba(255, 0, 0, 0.962);
+        font-size: 20px;
+        text-shadow: 2px 2px black;
+        padding-left: 2px;
+    }
     #text p{
         font-size: 16px;
         text-align: justify;
@@ -1073,7 +1136,6 @@ body{
     
     #voitures img{
         width: 250px;
-       
         border-radius: 15px;
         box-shadow: 2px 2px 4px black;   
     }
