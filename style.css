@@ -199,7 +199,7 @@ span{
     width: 900px;
     color: white;
     text-align:justify ;
-    margin-left: 700px;
+    margin: auto;
     font-size: 25px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
 }
