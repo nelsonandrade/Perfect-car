@@ -96,7 +96,8 @@ span{
     #boas_festas{
         background-color: #18b7ff;
         width: 700px;
-        margin-left: 750px;
+       /* margin-left: 750px;*/
+        margin: auto;
         border-top-left-radius: 25px;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
@@ -503,7 +504,6 @@ span{
     #boas_festas{
         background-color: #18b7ff;
         width: 450px;
-        margin-left: 300px;
         border-top-left-radius: 25px;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
@@ -738,6 +738,7 @@ body{
     }
     #text p{
         font-size: 20px;
+        margin: auto;
     }
     #peinture p{
         width: 475px;
@@ -890,7 +891,7 @@ body{
     }
     #text{
         align-items: center;
-        padding-left: 20px;
+       
     
     }
    /* .text h1, span{
@@ -1098,7 +1099,6 @@ body{
         font-size: 16px;
         text-align: justify;
         width: 250px;
-        padding-left: 35px;
     }
     #text h1, span{
         font-size: 35px;
