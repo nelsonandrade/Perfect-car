@@ -1,3 +1,12 @@
+<php
+     include="contacto.php"
+     >
+
+</php>
+
+
+    
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +17,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Perfect Car</title>
 </head>
 <body>
@@ -30,8 +39,7 @@
                 <li> <a href="contact.html">CONTACT</a></li>
                 <li> <a href="reparations.html">RÉPARATIONS EFFETUÉES</a></li>
             </ul>
-        </div>
-         
+        </div>  
     </nav>
 </header>
 <script src="mobile-menu.js"></script>
@@ -44,32 +52,32 @@
                 <!--Formulaire--> 
                 <div class="contact form" >
                     <h3>Envoyez votre message</h3>
-                    <form>
+                    <form action="contact.php" method="POST">
                         <div class="formBox">
                             <div class="row50">
                                 <div class="inputbox">
                                     <span>Nom </span>
-                                    <input type="text" placeholder="Dupont">
+                                    <input type="text" name="surname" placeholder="Dupont">
                                 </div>
                                 <div class="inputbox">
                                     <span>Prénom</span>
-                                    <input type="text" placeholder="Martin">
+                                    <input type="text" name="firstname" placeholder="Martin">
                                 </div>
                             </div>
                             <div class="row50">
                                 <div class="inputbox">
                                     <span>Email </span>
-                                    <input type="text" placeholder="Martin_Dupon@email.com">
+                                    <input type="text" name="email" placeholder="Martin_Dupon@email.com">
                                 </div>
                                 <div class="inputbox">
                                     <span>Mobile</span>
-                                    <input type="tel" pattern="\([+33] {3}\)\[-9]{9}" placeholder="(+33)xxxxxxxxxxxx">
+                                    <input type="tel" name="tel" pattern="\([+33] {3}\)\[-9]{9}" placeholder="(+33)xxxxxxxxxxxx">
                                 </div>
                             </div>
                             <div class="row100">
                                 <div class="inputbox">
                                     <span>Message </span>
-                                   <textarea placeholder="Écrivez ici votre message...."></textarea>
+                                   <textarea name="message" placeholder="Écrivez ici votre message...."></textarea>
                                 </div>
                                 <div class="row100">
                                     <div class="inputbox">
@@ -78,7 +86,6 @@
                                 </div>
                             </div>            
                         </div>
-
                     </form>
                 </div>
                 <!-- information-->
