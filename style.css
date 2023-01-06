@@ -1060,7 +1060,6 @@ body{
 @media  (max-width:480px){
     body{
         overflow-x: hidden;
-        
         width: 400px;
         height: auto;
     }
@@ -1228,7 +1227,7 @@ body{
         font-size: 15px;
     }
     .info .infobox div span{
-        min-width: 40px;
+        width: 40px;
         height: 40px;
         color: white;
         background: #18b7ff;
@@ -1237,7 +1236,7 @@ body{
         align-items: center;
         font-size: 1.5em;
         border-radius: 50%;
-        margin-right: 15px;
+        /*margin-right: 15px;*/
     }
     .reseaux_sociaux a img{
         display: none;
@@ -1282,6 +1281,23 @@ body{
        .prodution p, h3{
         text-align: left;
        }
+    .contactez .title h2{
+        font-size: 30px;
+    } 
+    .contact form{
+        width: 350px;
+    } 
+    
+    .inputbox span{
+        font-size: 18px;
+    } 
+    .inputbox input{
+        margin-left: 5px; 
+        width: 350px; 
+    }
+    .inputbox textarea{
+        margin-left: 5px;
+    }
 }
 /*footer*/
 footer{
