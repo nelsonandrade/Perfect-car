@@ -838,7 +838,7 @@ body{
     }
     .inputbox textarea{
         resize: none;
-        min-height: 100%px;
+        min-height: 90%;
         margin-bottom: 5px;
     }
     .prodution p, h3{
