@@ -891,8 +891,6 @@ body{
     }
     #text{
         align-items: center;
-       
-    
     }
    /* .text h1, span{
         width: 300px;
@@ -1002,15 +1000,25 @@ body{
         flex-direction: column;
     }
     .inputbox {
-        width: 100%;
+        width: 90%;
+        padding-left: 10px;
+    }
+    .box{
+        width:90%;
+        margin-right: 0px;
     }
     .contact{
         padding: 0px;
     }
     .inputbox textarea{
         resize: none;
-        min-height: 100%px;
+        width: 90%;
+        min-height: 100px;
         margin-bottom: 5px;
+    }
+    .title h2{
+        font-size: 40px;
+        margin-top: 40px;
     }
     .prodution p, h3{
         text-align: center;
@@ -1059,8 +1067,8 @@ body{
 }
 @media  (max-width:480px){
     body{
-        overflow-x: hidden;
-        width: 400px;
+       
+        width: 100%;
         height: auto;
     }
     .menu img{
@@ -1099,7 +1107,7 @@ body{
         text-align: justify;
         width: 250px;
     }
-    #text h1, span{
+    #text h1{
         font-size: 35px;
         text-align: left;
         padding-left: 45px;
@@ -1226,6 +1234,10 @@ body{
         color: white;
         font-size: 15px;
     }
+    .infobox a, p{
+        font-size: 14px;
+        margin-left:0px ;
+    }
     .info .infobox div span{
         width: 40px;
         height: 40px;
@@ -1236,7 +1248,7 @@ body{
         align-items: center;
         font-size: 1.5em;
         border-radius: 50%;
-        /*margin-right: 15px;*/
+        margin-right: 15px;
     }
     .reseaux_sociaux a img{
         display: none;
