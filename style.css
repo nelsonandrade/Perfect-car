@@ -9,7 +9,7 @@
 body{
     width: 100%;
     font-family: sans-serif;
-    background:url(img/fundo3.jpg);
+    background:rgb(21, 20, 20);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;/*pour que l'image soit fixée*/
@@ -47,16 +47,20 @@ span{
    text-align: center;
 }
  .nav-list li a{
-     color: black;
+     color: white;
      text-decoration: none;
      font-weight: bold;
      font-size: 20px;
      transition: 0.3s;
+     transition-delay: 0s;
+     
     }
-    .nav-list ul li a:hover{
-        color:white;
-        background: #000;
+    .nav-list li a:hover{
+        color:rgb(86, 161, 227);
+        border-bottom: 4px solid #000;
         width: auto;
+        transition: 0.1s;  
+        font-size: 22px ;
     }
     .roman{
         display: none;
