@@ -7,14 +7,22 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    width: 100%;
-    font-family: sans-serif;
-    background:rgb(21, 20, 20);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;/*pour que l'image soit fixée*/
+    display: flex;
+    margin-top:50px;
+    margin-right:10px;
+    
+    /*justify-content: center;*/
+    flex-direction: column;
+    font-family: "Roboto";
+    background-color: #f2f2f7;
+    transition: 0.4s;
+    
     background-position: center;
 }
+body.dark {
+    background-color: #212121;
+  }
+ 
 .menu{
     width: auto;
     background:transparent;
@@ -47,7 +55,7 @@ span{
    text-align: center;
 }
  .nav-list li a{
-     color: white;
+     color: rgb(13, 13, 13);
      text-decoration: none;
      font-weight: bold;
      font-size: 20px;
@@ -97,6 +105,52 @@ span{
         width: 650px;
         margin: 40px;
     }
+    /*Dark Mode*/
+      .switch {
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        position: relative;
+        margin: auto;
+        width: 3.5rem;
+        height: 2rem;
+      }
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      .sliders {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(215, 215, 228);
+        transition: 0.4s;
+        border-radius: 30px;
+      }
+      .sliders:before {
+        position: absolute;
+        content: "";
+        height: 1.4rem;
+        width: 1.4rem;
+        border-radius: 20px;
+        left: 0.3rem;
+        top: 50%;
+        transform: translateY(-50%);
+        background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+        transition: 0.4s;
+      }
+      input:checked + .sliders {
+        background-color: #37393f;
+      }
+      input:checked + .sliders:before {
+        left: calc(100% - 1.7rem);
+        background: #37393f;
+        box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+      }
     /*mensagem*/
     #boas_festas{
         background-color: #18b7ff;
@@ -199,7 +253,7 @@ span{
 }
 #text p{
     width: 900px;
-    color: white;
+    color: rgb(24, 23, 23);
     text-align:justify ;
     margin: auto;
     font-size: 25px;
@@ -228,7 +282,7 @@ span{
      position: relative;
      font-size: 30px;
      justify-content: space-between;
-     color:white;
+     color:rgb(19, 17, 17);
      width: auto;
      height: 190px;  
 }
@@ -477,7 +531,7 @@ span{
 /* page reparations*/
 .text{
     margin-top: 50px;
-    color: white;
+    color: rgb(9, 9, 9);
     width: 900px;
     text-align:justify ;
     margin: auto;
@@ -1353,10 +1407,10 @@ footer{
 .prodution p, h3{
     text-align: left;
     padding-left: 10px;
-    color: rgb(206, 206, 206);
+    color: rgb(21, 20, 20);
 }
 .prodution a{
-    color: whitesmoke;
+    color: rgb(19, 17, 17);
     font-style: italic;
     font-weight: 900;
 }
