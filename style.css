@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap');
-
+:root{
+    --background-color:white ;
+    --color: #000;
+    --backgound-menu:black;
+    --color-menu:white;
+    --color-x:white;
+}
+:root[data-theme="dark"]{
+    --background-color:#212121 ;
+    --color: white;
+    --backgound-menu:rgb(238, 229, 229);
+    --color-menu:rgb(45, 40, 40);
+    --color-x:black;
+}
 *{
     margin: 0;
     padding: 0;
@@ -10,19 +23,15 @@ body{
     display: flex;
     margin-top:50px;
     margin-right:10px;
-    
     /*justify-content: center;*/
     flex-direction: column;
     font-family: "Roboto";
-    background-color: #f2f2f7;
+    background-color:var(--background-color);
     transition: 0.4s;
-    
     background-position: center;
 }
-body.dark {
-    background-color: #212121;
-  }
- 
+
+
 .menu{
     width: auto;
     background:transparent;
@@ -33,7 +42,7 @@ body.dark {
     padding: 0 5%;
     margin-top: 60px;
     box-sizing: border-box;
-    background: rgba(255,255,255,.2);
+    background: var(--backgound-menu);
     box-shadow: 0 5px 15px rgba(0,0,0,.2);
 }
 .menu img{
@@ -55,7 +64,7 @@ span{
    text-align: center;
 }
  .nav-list li a{
-     color: rgb(13, 13, 13);
+     color: var(--color-menu);
      text-decoration: none;
      font-weight: bold;
      font-size: 20px;
@@ -96,7 +105,7 @@ span{
     .mobile-menu div {
         width: 32px;
         height: 5px;
-        background:black;
+        background: var(--color-x);
         margin: 8px;
         border-radius: 20px;
         transition: 0.3s;
@@ -251,14 +260,15 @@ span{
     font-size: 60px;
     color: rgb(230, 14, 14);
 }
-#text p{
+.text p{
     width: 900px;
-    color: rgb(24, 23, 23);
+    color: var(--color);
     text-align:justify ;
     margin: auto;
     font-size: 25px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
 }
+
 .servicos{
      width: auto;
      height: 590px; 
@@ -297,16 +307,15 @@ span{
     text-align: center;
     text-shadow: 2px 2px 4px black;
 }
-#peinture p{
-    text-shadow: 2px 2px 5px black;  
+#peinture p{  
     text-align: center;
     margin-top: 50px;
-    color: white;
+    color:var(--color);
     width: 900px;
     text-align:justify ;
     margin: auto;
     font-size: 25px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-family: Arial, Helvetica, sans-serif; 
 }
 .carro img{
     max-width: 350px;
@@ -332,8 +341,8 @@ span{
 }
 #temoi{
     width: auto;
-    height: 100x;
-    border: 3px solid rgba(250, 250, 252, 0.973);
+    height: 100%;
+    border: 3px solid ;
     margin: 5px 5px;
     display: flex;
 }    
@@ -347,19 +356,19 @@ span{
 #temoi h2{
     height: 40px;
     padding: 10px 30px;
-    color: aliceblue; 
+    color:var(--color); 
 }
 #temoi p{
     padding-top: 50px;
     padding-left: 5px;
     margin-left: 50px;
     width:400px;
-    color: rgb(234, 225, 225);
+    color: var(--color);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;   
+    font-size: 16px;   
 }
 #temoi span{
-    color: white;
+    color: var(--color);
     font-size: 14px;
     font-weight: bolder;
     padding-top: 150px;
@@ -1407,10 +1416,10 @@ footer{
 .prodution p, h3{
     text-align: left;
     padding-left: 10px;
-    color: rgb(21, 20, 20);
+    color:var(--color);
 }
 .prodution a{
-    color: rgb(19, 17, 17);
+    color: var(--color);
     font-style: italic;
     font-weight: 900;
 }
